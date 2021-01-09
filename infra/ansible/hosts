@@ -1,0 +1,10 @@
+[local]
+loof-api-server
+
+[staging]
+loof-api-server-stg-a
+loof-api-server-stg-c
+
+[production]
+loof-api-server-prod-a
+loof-api-server-prod-c

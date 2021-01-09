@@ -1,0 +1,15 @@
+# TODO: 余裕がある時に諸々整理したい
+- name: Playbook for local env
+  hosts: local
+  vars:
+    env: local
+    remote_role: app
+  become: yes
+  vars_files:
+    - vars/local.yml
+    - vars/common.yml
+  roles:
+    - git
+    - vim
+    - ruby
+    - nginx

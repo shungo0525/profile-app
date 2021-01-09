@@ -1,0 +1,17 @@
+- name: Playbook for production env
+  hosts: production
+  vars:
+    env: production
+    remote_role: app
+  become: yes
+  vars_files:
+    - vars/common.yml
+    - vars/production.yml
+  roles:
+    - env
+    - git
+    - vim
+    - ruby
+    - nginx
+    - mysql
+    - unicorn
